@@ -1,9 +1,9 @@
-
-
+import Navbar from "./sections/Navbar";
 
 const App = () => {
    return (
-    <main>
+    <main className="max-w-7xl mx-auto">
+       <Navbar/> 
     </main>
    )
 }
