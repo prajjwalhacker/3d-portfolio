@@ -40,12 +40,12 @@ const Navbar = () => {
                <nav className="sm:flex hidden"> 
                <NavItems/>
                </nav>
-               <div className="w-6 h-6" onClick={toggleMenu}>
+               <div className="w-6 h-6 sm:hidden" onClick={toggleMenu}>
                  <img src={!isOpen ? menuI : closeI} alt="" className="w-6 h-6"/>
                </div>
                </div>   
             </div>
-            <div className={`sm:hidden  nav-sidebars ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+            <div className={`sm:hidden  nav-sidebars overflow-y-hidden ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
                <nav className="p-5">
                    <NavItems/>
                </nav>
