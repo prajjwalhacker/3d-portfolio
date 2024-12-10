@@ -1,5 +1,6 @@
 import meImg from '../../public/assets/grid1.png';
 import stackImg from '../../public/assets/grid2.png';
+import Globe from 'react-globe.gl'
 
 const About = () => {
   return (
@@ -32,6 +33,26 @@ const About = () => {
 </div>
 </div>
       </div>
+      <div className="col-span-1 xl:row-span-3">
+       
+       <div className="grid-container">
+       <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
+           <Globe height={326} width={326} backgroundColor='rgba(0,0,0,0)' backgroundImageOpacity={0.5}
+           globeImageUrl={'//unpkg.com/three-globe/example/img/earth-night.jpg'}
+           bumpImageUrl={'//unpkg.com/three-globe/example/img/earth-topology.png'}/>
+       </div>
+       <div>
+          <p className='grid-headtext'>
+            Hi, I work in Gurgoan
+          </p>
+          <p className='grid-subtext'>
+            Well I am remotely Available to work accross timezone.
+          </p>
+        </div>
+       <div>
+       </div>
+       </div>
+             </div>
       </div>
     </section>
   )
