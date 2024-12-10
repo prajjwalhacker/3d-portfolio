@@ -1,10 +1,22 @@
 import { useState } from "react";
 import menuI from '../assets/menu.svg';
 import closeI from '../assets/close.svg';
+import { navLinks } from "../constant";
 
 const NavItems= () => {
     return (
-        <ul className="">
+        <ul className="nav-ul">
+            {navLinks.map((item) => {
+                return (
+                    <li key={item.id} className="nav-li">
+                        <a href={item.href} className="nav-li_a" onClick={() => {
+
+                        }}>
+                        {item.name}
+                        </a>
+                    </li>
+                )
+            })}
         </ul>
     )
 }
@@ -25,10 +37,18 @@ const Navbar = () => {
                <a href='/' className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
                   Prajjwal
                </a>
+               <nav className="sm:flex hidden"> 
+               <NavItems/>
+               </nav>
                <div className="w-6 h-6" onClick={toggleMenu}>
                  <img src={!isOpen ? menuI : closeI} alt="" className="w-6 h-6"/>
                </div>
                </div>   
+            </div>
+            <div className={`sm:hidden  nav-sidebars ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+               <nav className="p-5">
+                   <NavItems/>
+               </nav>
             </div>
         </header>
     )
