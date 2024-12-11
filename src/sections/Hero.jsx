@@ -28,7 +28,7 @@ const Hero = () => {
            Hi, I am Prajjwal Soni <span className="waving-hand">👋</span>
          </p>
          <p className="hero_tag text-gray_gradient">
-            Building Products in Startups
+            Senior FullStack Engineer
          </p>
         </div>
         <div className="w-full h-full absolute inset-0 pt-20">
@@ -37,7 +37,7 @@ const Hero = () => {
           <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
           <HackerRoom scale={isMobile ? 0.07: 0.095} position={[2, -8, 2]} rotation={[0, -Math.PI, 0]}/>
           <group>
-             <Target/>
+             <Target position={sizes.targetPosition} scale={4.5}/>
           </group>
           <Float speed={4} rotationIntensity={1} floatIntensity={2}>
         <Atom />
