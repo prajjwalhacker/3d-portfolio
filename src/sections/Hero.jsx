@@ -9,9 +9,16 @@ import { useMediaQuery } from "react-responsive"
 import { Trail, Float, Line, Sphere, Stars } from '@react-three/drei'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { Atom } from "./StartReact"
+import Target from "../Components/Target"
+import { calculateSizes } from "../constant"
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+
+
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
 
   return (
@@ -29,6 +36,9 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader/>}>
           <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
           <HackerRoom scale={isMobile ? 0.07: 0.095} position={[2, -8, 2]} rotation={[0, -Math.PI, 0]}/>
+          <group>
+             <Target/>
+          </group>
           <Float speed={4} rotationIntensity={1} floatIntensity={2}>
         <Atom />
       </Float>

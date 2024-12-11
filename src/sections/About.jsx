@@ -1,8 +1,15 @@
 import meImg from '../../public/assets/grid1.png';
 import stackImg from '../../public/assets/grid2.png';
+import grid3 from '../../public/assets/grid3.png';
+import grid4 from '../../public/assets/grid4.png';
 import Globe from 'react-globe.gl'
 
 const About = () => {
+
+  const handleCopy = () => {
+     navigator.clipboard.writeText('prajjwalsoni123@gmail.com');
+  }
+  
   return (
     <section className="c-space my-20">
       <div className="grid xl:row-span-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -46,14 +53,40 @@ const About = () => {
             Hi, I work in Gurgoan
           </p>
           <p className='grid-subtext'>
-            Well I am remotely Available to work accross timezone.
+            Well I am remotely Available to work across different timezone.
           </p>
         </div>
        <div>
        </div>
        </div>
              </div>
+             <div className="col-span-1 xl:row-span-3">
+       
+       <div className="grid-container">
+       <img src={grid3} alt='grid3' className='w-full sm:h-[266px] h-fit object-contain'/>     
+       <div>
+          <p className='grid-headtext'>
+            My Passion for Coding
+          </p>
+          <p className='grid-subtext'>
+             I love Solving Problems and building things though code.
+             Coding isnt just for profession its my passion.
+          </p>
+        </div>
+       <div>
+       </div>
+       </div>
+             </div>
+             <div className="col-span-1 xl:row-span-3">
+       
+       <div className="grid-container">
+       <img src={grid4} alt='grid3' className='w-full sm:h-[266px] h-fit object-contain'/>     
+       <div>
+       </div>
+       </div>
+             </div>
       </div>
+      
     </section>
   )
 }
