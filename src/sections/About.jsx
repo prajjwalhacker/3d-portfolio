@@ -1,8 +1,11 @@
+/* eslint-disable react/no-unknown-property */
 import meImg from '../../public/assets/grid1.png';
 import stackImg from '../../public/assets/grid2.png';
 import grid3 from '../../public/assets/grid3.png';
 import grid4 from '../../public/assets/grid4.png';
 import Globe from 'react-globe.gl'
+import Cube from '../Components/Cube';
+import { Canvas } from "@react-three/fiber"
 
 const About = () => {
 
@@ -59,8 +62,8 @@ const About = () => {
        <div>
        </div>
        </div>
-             </div>
-             <div className="col-span-1 xl:row-span-3">
+      </div>
+      <div className="col-span-1 xl:row-span-3">
        
        <div className="grid-container">
        <img src={grid3} alt='grid3' className='w-full sm:h-[266px] h-fit object-contain'/>     
@@ -76,15 +79,22 @@ const About = () => {
        <div>
        </div>
        </div>
-             </div>
-             <div className="col-span-1 xl:row-span-3">
-       
+      </div>
+      <div className="col-span-1 xl:row-span-3">
        <div className="grid-container">
-       <img src={grid4} alt='grid3' className='w-full sm:h-[266px] h-fit object-contain'/>     
+       <img src={grid4} alt='grid3' className='w-full sm:h-[266px] h-fit object-contain'/>   
+       <div>
+       <div className="flex items-center justify-center">
+  <button onClick={handleCopy} className="text-white bg-transparent border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black transition duration-300">
+    Contact Me
+  </button>
+</div>
+        </div>  
        <div>
        </div>
        </div>
-             </div>
+
+      </div>
       </div>
       
     </section>
