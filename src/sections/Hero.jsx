@@ -11,6 +11,8 @@ import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { Atom } from "./StartReact"
 import Target from "../Components/Target"
 import { calculateSizes } from "../constant"
+import ReactLogo from "../Components/ReactLogo"
+import Cube from "../Components/Cube"
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -38,6 +40,8 @@ const Hero = () => {
           <HackerRoom scale={isMobile ? 0.07: 0.095} position={[2, -8, 2]} rotation={[0, -Math.PI, 0]}/>
           <group>
              <Target position={sizes.targetPosition} scale={4.5}/>
+             <ReactLogo position={sizes.reactLogoPosition} />
+             <Cube position={sizes.cubePosition}/>
           </group>
           <Float speed={4} rotationIntensity={1} floatIntensity={2}>
         <Atom />
