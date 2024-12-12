@@ -189,7 +189,7 @@ export const navLinks = [
       name: 'Fairdeal.market',
       pos: 'Senior Software Engineer',
       duration: '2024 - Present',
-      title: "Working as Senior software engineer at Fairdeal.market built whole infrastructure of the quick ecccomerce operation of fairdeal.market",
+      title: "Working as Senior software engineer at Fairdeal.market built whole infrastructure of the quick eccomerce operation of fairdeal.market",
       icon: '/assets/figma.svg',
       animation: 'victory',
     },
