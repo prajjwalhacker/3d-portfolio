@@ -24,24 +24,12 @@ const About = () => {
             Hi, I am Prajjwal
           </p>
           <p className='grid-subtext'>
-            With 4 years of experience, I have honed my skills with frontend and backend development
+            With 4 years of experience, I have honed my skills with frontend and backend development.
+            Build lot of products for startup, skilled in NodeJS NextJS Javascript ReactJS Typescript
+            TailwindCss ThreeJS SCSS Websocket WebRTC
           </p>
         </div>
         </div>
-      </div>
-      <div className="col-span-1 xl:row-span-3">
-       
-<div className="grid-container">
-<img src={stackImg} alt='grid-2' className='w-full sm:h-[276px] h-fit object-contain'/>
-<div>
-<p className='grid-headtext'>
-  Tech Stack
-</p>
-<p className='grid-subtext'>
-  My Techstack includes typescript Javascript NodeJS ReactJS NextJS MongoDB ThreeJS Sql etc
-</p>
-</div>
-</div>
       </div>
       <div className="col-span-1 xl:row-span-3">
        
