@@ -186,7 +186,7 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Farideal.market',
+      name: 'Fairdeal.market',
       pos: 'Senior Software Engineer',
       duration: '2024 - Present',
       title: "Working as Senior software engineer at Fairdeal.market built whole infrastructure of the quick ecccomerce operation of fairdeal.market",
